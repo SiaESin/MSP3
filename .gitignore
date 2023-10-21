@@ -5,7 +5,7 @@
 /node_modules
 client/node_modules
 backend/node_modules   
- 
+
 /.pnp
 .pnp.js
 
@@ -17,6 +17,7 @@ backend/node_modules
 
 # misc
 .env
+backend/.env
 .DS_Store
 .env.local
 .env.development.local
