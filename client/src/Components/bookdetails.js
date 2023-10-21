@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router"
-import CommentCard from './CommentCard'
-import NewCommentForm from "./NewCommentForm";
 
-function PlaceDetails() {
+
+function BookDetails() {
 
 	const { placeId } = useParams()
 
@@ -123,13 +122,13 @@ if (currentUser?.role === 'admin') {
 		<main>
 			<div className="row">
 				<div className="col-sm-6">
-					<img style={{ maxWidth: 200 }} src={place.pic} alt={place.name} />
+					<img style={{ maxWidth: 200 }} src={place.pic} alt={book.name} />
 					<h3>
-						Located in {place.city}, {place.state}
+						Located in {book.city}, {book.state}
 					</h3>
 				</div>
 				<div className="col-sm-6">
-					<h1>{place.name}</h1>
+					<h1>{book.name}</h1>
 					<h2>
 						Rating
 					</h2>
@@ -139,10 +138,10 @@ if (currentUser?.role === 'admin') {
 						Description
 					</h2>
 					<h3>
-						{place.name} has been serving {place.city}, {place.state} since {place.founded}.
+						{book.name} has been serving {book.city}, {book.state} since {book.founded}.
 					</h3>
 					<h4>
-						Serving {place.cuisines}.
+						Serving {book.cuisines}.
 					</h4>
 					<br />
 					<a className="btn btn-warning" onClick={editPlace}>
