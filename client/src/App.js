@@ -1,37 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './home'
-import About from './Components/about'
-import Books from './books/Books'
-import Contact from './Contact'
-import SignUpForm from './users/SignUpForm'
-import LoginForm from './users/LoginForm'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from './home'
+import Nav from './Navigation'
+import About from './Components/about'
+import Books from './Components/books'
+import BookDetails from './Components/bookdetails'
+import Contact from './Components/contact'
+import LoginForm from './users/login'
+import SignUpForm from './users/signup'
 
 function App() {
   return (
-    <CurrentUserProvider>
-      <BrowserRouter>
-        <Navigation />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/About" component={AboutDetails} />
-          <Route exact path="/Books" component={BooksDetails} />
-          <Route exact path="/Contact" component={ContactForm} />
-          <Route exact path="/Sign-up" component={SignUpForm} />
-          <Route exact path="/Login" component={LoginForm} />
-          <Route path="/" component={Error404} />
-        </Switch>
-      </BrowserRouter>
-    </CurrentUserProvider>
-  );
-}
-
-
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/books" element={<Books />} />
+          <Route path="/bookdetails" element={<BookDetails />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<SignUpForm />} />
+          <Route path="/signup" element={<LoginForm />} />
+        </Routes>
+      </div>
+  </BrowserRouter>
+  )
+  }
 
 export default App;
+    
 
+    // <CurrentUserProvider>
+    //   <BrowserRouter>
+    //     <Navigation />
+    //     <Switch>
+    //       <Route exact path="/" component={Home} />
+    //       <Route exact path="/About" component={AboutDetails} />
+    //       <Route exact path="/Books" component={BooksDetails} />
+    //       <Route exact path="/Contact" component={ContactForm} />
+
+    //       <Route exact path="/Login" component={LoginForm} />
+    //       <Route exact path="/Sign-up" component={SignUpForm} />
+    //       <Route path="/" component={Error404} />
+    //     </Switch>
+    //   </BrowserRouter>
+    // </CurrentUserProvider>
 
 // function App() {
 //   return (
@@ -54,8 +69,6 @@ export default App;
 //   );
 // }
 
-
-
 // import { BrowserRouter, Route, Switch } from 'react-router-dom'
 // import Home from './Home'
 // import PlaceIndex from './places/PlaceIndex'
@@ -67,6 +80,3 @@ export default App;
 // import SignUpForm from './users/SignUpForm'
 // import LoginForm from './users/LoginForm'
 // import CurrentUserProvider from './contexts/CurrentUser'
-
-
-

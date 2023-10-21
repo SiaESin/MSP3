@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { useHistory } from "react-router"
 import { CurrentUser } from "./contexts/CurrentUser"
 
-function LoginForm() {
+function Login() {
 
     const history = useHistory()
 
@@ -17,7 +17,7 @@ function LoginForm() {
          
 async function handleSubmit(e) {
     e.preventDefault()
-    const response = await fetch(`http://localhost:5000/authentication/`, {
+    const response = await fetch(`http://localhost:3000/authentication/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -82,4 +82,4 @@ async function handleSubmit(e) {
 
     console.log(data)
 }
-export default LoginForm
+export default Login

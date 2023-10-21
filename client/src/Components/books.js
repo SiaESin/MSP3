@@ -1,47 +1,47 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 
-function PlaceIndex(data) {
+function Books() {
 
 	const history = useHistory()
 	
-	const [places, setPlaces] = useState([])
+	const [books, setBooks] = useState([])
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch(`http://localhost:5000/places`)
+			const response = await fetch(`http://localhost:3000/books`)
 			const resData = await response.json()
-			setPlaces(resData)
+			setBooks(resData)
 		}
 		fetchData()
 	}, [])
 
-	let placesFormatted = places.map((place) => {
+	let booksFormatted = books.map((books) => {
 		return (
-			<div className="col-sm-6" key={place.placeId}>
+			<div className="col-sm-6" key={books.id}>
 				<h2>
-					<a href="#" onClick={() => history.push(`/places/${place.placeId}`)} >
-						{place.name}
+					<a href="#" onClick={() => history.push(`/books/${books.id}`)} >
+						{books.name}
 					</a>
 				</h2>
 				<p className="text-center">
-					{place.cuisines}
+					{books.description}
 				</p>
-				<img style={{ maxWidth: 200 }} src={place.pic} alt={place.name} />
+				<img style={{ maxWidth: 200 }} src={books.pic} alt={books.name} />
 				<p className="text-center">
-					Located in {place.city}, {place.state}
+					{books.price}
 				</p>
 			</div>
 		)
 	})
 	return (
 		<main>
-			<h1>Places to Rant or Rave About</h1>
+			<h1>See our Amazing selection of Books!</h1>
 			<div className="row">
-				{placesFormatted}
+				{booksFormatted}
 			</div>
 		</main>
 	)
 }
 
-export default PlaceIndex;
+export default Books;
