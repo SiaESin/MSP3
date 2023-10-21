@@ -7,9 +7,8 @@ import About from './Components/about'
 import Books from './Components/books'
 import BookDetails from './Components/bookdetails'
 import Contact from './Components/contact'
-import SignUpForm from './users/SignUpForm'
-import LoginForm from './users/LoginForm'
-
+import LoginForm from './users/login'
+import SignUpForm from './users/signup'
 
 function App() {
   return (
