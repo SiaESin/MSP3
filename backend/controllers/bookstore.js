@@ -15,7 +15,7 @@ router.get('/books/:name', async (req, res) => {
     const book = await BookModel.findOne({name: req.params.name})
     res.send(book)
 })
-router.get('*', (req, res) => {
+router.get('*', (req, res) => { 
     res.status(404).send('Not Found')
 })
 
