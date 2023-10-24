@@ -1,28 +1,28 @@
-import { useState, useEffect } from "react";
-// import { useHistory, useParams } from "react-router";
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
 
 export default function Signup() {
-  // const history = useHistory();
+  const history = useNavigate();
 
   const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
   });
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     await fetch(`http://localhost:5000/users/`, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(user),
     });
 
-    // history.push(`/`);
+    history.push('/');
   }
 
   return (
@@ -66,19 +66,19 @@ export default function Signup() {
               name="email"
             />
           </div>
-            <div className="col-sm-6 form-group">
-              <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                required
-                value={user.password}
-                onChange={(e) => setUser({ ...user, password: e.target.value })}
-                className="form-control"
-                id="password"
-                name="password"
-              />
-            </div>
+          <div className="col-sm-6 form-group">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              required
+              value={user.password}
+              onChange={(e) => setUser({ ...user, password: e.target.value })}
+              className="form-control"
+              id="password"
+              name="password"
+            />
           </div>
+        </div>
         <input className="btn btn-primary" type="submit" value="Sign Up" />
       </form>
     </main>

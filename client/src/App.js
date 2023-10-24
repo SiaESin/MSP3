@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from './home'
 import Nav from './Navigation'
@@ -12,7 +12,7 @@ import SignUpForm from './users/signup'
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Nav />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path="/signup" element={<LoginForm />} />
         </Routes>
       </div>
-  </BrowserRouter>
+  </Router>
   )
 }
 

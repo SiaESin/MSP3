@@ -1,19 +1,16 @@
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
-const app = express();
+const express = require('express')
+const cors = require('cors')
+const methodOverride = require('method-override')
+const mongoose = require('mongoose')
+const app = express()
 
-// Middleware
-app.use(cors());
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
-
-// Routes
-app.use('/bookstore', require('./controllers/bookstore'));
-app.use('/users', require('./controllers/users'));
-
-// Template engine setup (assuming you're using a template engine like EJS)
-app.set('view engine', 'ejs');
+app.use(express.json())
+app.use(express.static('public'))
+app.use(express.urlencoded({extended: true}))
+app.use(cors())
+app.use(methodOverride('_method'))
+app.use('/', require('./controllers/bookstore'))
+app.use('/', require('./controllers/users'))
 
 app.get('/', (req, res) => {
     res.render('home'); // Assuming you have an 'home.ejs' template

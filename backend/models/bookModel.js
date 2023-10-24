@@ -3,9 +3,10 @@ const mongoose = require('mongoose')
 const bookSchema = new mongoose.Schema({
     name: {type: String, required: true, unique: true},
     author: {type: String, required: true},
-    description: String,
+    date: {type: Date, default: Date.now},
+    description: {type: String, default: 'A great book!'},
     price: {type: Number, required: true},
-    image: String
+    image: {type: String, default: '../client/public/assets/comingsoon.jpg' }
 })
 
 const BookModel = mongoose.model('Book', bookSchema)
