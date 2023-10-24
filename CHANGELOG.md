@@ -84,3 +84,20 @@ Isaacs-Air:MSP3 isaachernandez$ git log --oneline --decorate
 d4a9da93 updated frontend
 bab9bb9e created front-end
 66b5aa17 (origin/aly, origin/Isaac) Initial commit
+
+
+48efb482 (HEAD -> siabhon, origin/main, origin/HEAD, main) useHistory correction
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+54c1513f remove client node modules
+f51e4f63 Merge pull request #8 from SiaESin/aly
+180f7816 (origin/aly) changed export default style etc
+71bb078f (origin/siabhon) Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+208c4b9b Merge branch 'main' of https://github.com/SiaESin/MSP3
+71b2e27d tons of backend
+f9b86871 Updated changelog
+e1097afa added dependencies cors, bcrypt, mongoose ETC
+9efaf202 Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+
+
