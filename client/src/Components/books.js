@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 
-function Books() {
+export default function Books() {
 
 	const history = useHistory()
 	
@@ -43,5 +43,3 @@ function Books() {
 		</main>
 	)
 }
-
-export default Books;

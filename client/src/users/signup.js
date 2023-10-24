@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router";
 
-function Signup() {
+export default function Signup() {
   const history = useHistory();
 
   const [user, setUser] = useState({
@@ -84,5 +84,3 @@ function Signup() {
     </main>
   );
 }
-
-export default Signup;
