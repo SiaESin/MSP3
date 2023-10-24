@@ -1,37 +1,43 @@
-// import { useEffect, useState } from "react";
-// // import { useHistory, useParams } from "react-router"
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router"
 
-// export default function BookDetails() {
+export default function BookDetails() {
 
-// 	const { bookId } = useParams()
+	const { bookId } = useParams()
 
-// 	const history = useHistory()
+	const history = useNavigate()
 
-// 	const [book, setbook] = useState(null)
+	const [book, setBook] = useState({
+        name: '',
+        author: '',
+        description: '',
+        price: 0,
+        image: '',
+    });
 
-// 	useEffect(() => {
-// 		const fetchData = async () => {
-// 			const response = await fetch(`http://localhost:3000/bookdetails/${bookId}`)
-// 			const resData = await response.json()
-// 			setBook(resData)
-// 		}
-// 		fetchData()
-// 	}, [bookId])
+	useEffect(() => {
+		const fetchData = async () => {
+			const response = await fetch(`http://localhost:3000/bookdetails/${bookId}`)
+			const resData = await response.json()
+			setBook(resData)
+		}
+		fetchData()
+	}, [bookId])
 
-// 	if (book === null) {
-// 		return <h1>book not found</h1>
-// 	}
+	if (book === null) {
+		return <h1>book not found</h1>
+	}
 
-// 	function editBook() {
-// 		history.push(`/bookdetails/${book.bookId}/edit`)
-// 	}
+	function editBook() {
+		history.push(`/bookdetails/${book.bookId}/edit`)
+	}
 	
-// 	return (
-// 		<div>
-// 			<h1>Book Details</h1>
-// 		</div>
-// 	)
-// }
+	return (
+		<div>
+			<h1>Book Details</h1>
+		</div>
+	)
+}
 
 
 
