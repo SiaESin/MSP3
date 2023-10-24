@@ -1,7 +1,7 @@
-import { useState } from "react"
-import { useHistory } from "react-router"
+// import { useState } from "react"
+// import { useHistory } from "react-router"
 
-function Contact() {
+export default function Contact() {
 
 	return (
 		<main>
@@ -16,6 +16,3 @@ function Contact() {
 		</main>
 	)
 }
-
-
-export default Contact

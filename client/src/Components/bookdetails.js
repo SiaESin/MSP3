@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router"
 
-
-function Bookdetails() {
+export default function BookDetails() {
 
 	const { bookId } = useParams()
 
@@ -26,6 +25,13 @@ function Bookdetails() {
 	function editBook() {
 		history.push(`/bookdetails/${book.bookId}/edit`)
 	}
+	
+	return (
+		<div>
+			<h1>Book Details</h1>
+		</div>
+	)
+}
 
 // 	async function deletePlace() {
 // 		await fetch(`http://localhost:5000/places/${place.placeId}`, {
@@ -165,6 +171,6 @@ function Bookdetails() {
 	// 		/>
 	// 	</main>
 	// )
-}
+// }
 
-export default Placedetails
+// export default Placedetails

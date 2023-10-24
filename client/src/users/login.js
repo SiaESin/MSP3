@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { useHistory } from "react-router"
 import { CurrentUser } from "./contexts/CurrentUser"
 
-function Login() {
+export default function Login() {
 
     const history = useHistory()
 
@@ -82,4 +82,3 @@ async function handleSubmit(e) {
 
     console.log(data)
 }
-export default Login
