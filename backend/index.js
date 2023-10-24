@@ -1,8 +1,13 @@
+require('dotenv').config()
 const express = require('express')
+
 const app = express()
 
 app.get('/', (req, res) => {
     res.send('Books Rule!')
 })
 
-app.listen(3000)
+app.get('*', (req, res) => {
+    res.status(404).send('Not Found')
+})
+app.listen(process.env.PORT)
