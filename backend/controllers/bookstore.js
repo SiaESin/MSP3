@@ -4,6 +4,8 @@ const BookModel = require('../models/bookModel.js')
 
 router.get('/home', (req, res) => {
     res.send('Books Rule!')
+    res.render('home')
+    
 })
 
 router.get('/books', async (req, res) => {

@@ -2,7 +2,7 @@
 // import { useHistory } from "react-router";
 // import { CurrentUser } from '.client/src/contexts/CurrentUser.js';
 
-function Nav() {
+export default function Nav() {
 
     return (
         <nav>
@@ -18,8 +18,6 @@ function Nav() {
         </nav>
     )
 }
-
-export default Nav;
 
 // function Navigation() {
 
