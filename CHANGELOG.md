@@ -241,3 +241,41 @@ e9dd1eda delete
 6c2759f1 removing node modules
 
 
+Isaacs-Air:MSP3 isaachernandez$ git log --oneline --decorate
+f7dc0f21 (HEAD -> Isaac) starting to style navbar
+76bc389c latest commit
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+54c1513f remove client node modules
+f51e4f63 Merge pull request #8 from SiaESin/aly
+180f7816 changed export default style etc
+71bb078f Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+208c4b9b Merge branch 'main' of https://github.com/SiaESin/MSP3
+71b2e27d tons of backend
+f9b86871 Updated changelog
+e1097afa added dependencies cors, bcrypt, mongoose ETC
+9efaf202 Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+ce03f833 backend index,js and controllers
+363acbaf Merge branch 'main' of https://github.com/SiaESin/MSP3
+8ae65bfb Merge pull request #7 from SiaESin/aly
+64bb6efb changed file name login and signup
+6e492ee2 Updated change log
+a37afdbf Completed front end components, pushing to the main
+58a943b9 Merge pull request #5 from SiaESin/AG
+6ec416d9 fixed up about, contact, book details
+02748ac8 Merge pull request #4 from SiaESin/aly
+b5519a95 Aly: Nav and App.js router
+a2162b7a Merge branch 'main' into siabhon
+62334ae6 gitignore
+06174877 gitignore
+68736477 Merge branch 'main' of https://github.com/SiaESin/MSP3
+6d060199 Merge branch 'Nalini' of https://github.com/SiaESin/MSP3
+6925989b Merge branch 'main' into Nalini
+05879bd0 edit
+cdf38317 edit
+97ae88d5 Merging from front end coding
+2c8feda0 Merge branch 'siabhon' of https://github.com/SiaESin/MSP3
+5fcb5c36 updating front end code
+078153c4 backend node and express
+e607b3da Merge pull request #3 from SiaESin/AG
