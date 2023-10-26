@@ -5,8 +5,7 @@
     --bg: #E5E5E5;
     --lavender: #C6BAC9;
     --transparent: rgba(0, 0, 0, 0);
-}
-        
+}   
 html {
     box-sizing: border-box;
     color: var(--maintext);
@@ -20,6 +19,9 @@ h1 {
     border: var(--gold) 2px solid;
     border-radius: 10px;
     margin: .7em 4em;
+}
+.home h1 {
+    padding: 0 2em;
 }
 a {
     color: var(--maintext);
