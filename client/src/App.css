@@ -2,7 +2,7 @@
     --maintext: #242F40;
     --icon: #CCA43B;
     --border: #363636;
-    --bg: #E5E5E5;
+    --bg: #FFFFFF;
 }
 
 html {
@@ -46,6 +46,7 @@ nav a:hover {
 
 .books img {
     width: 200px;
+   
 }
 
 .grid-container {
@@ -57,10 +58,22 @@ nav a:hover {
 .grid-item {
     text-align: center;
     margin-bottom: 2em;
+    margin: 12px;
+    background-color: #E5E5E5;
+    border-radius: 0 100px 100px 10px;
+    border:solid #CCA43B 3px;
+    padding: 10px;
+    font-size: 1em;
+    
 }
 .grid-item .summary {
-    margin: 0 2em;
+    margin: 2em 2em;
     text-align: left;
+   
+    background-color: #E5E5E5;
+    padding: 10px;
+    font-size: 1.5em;
+  
 }
 .authentication .row {
     display: flex;
