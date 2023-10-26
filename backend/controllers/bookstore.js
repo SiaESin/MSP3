@@ -1,7 +1,7 @@
-const express = require('express')
-const router = express.Router()  
-const Book = require('../models/bookModel.js')
+import express from 'express';
+import Book from '../models/bookModel.js';
 
+const router = express.Router()  
 //main
 router.get('/home', (req, res) => {
     res.send('Books Rule!')
@@ -62,4 +62,4 @@ router.delete('/books/:name', (req, res) => {
     })
 })
 
-module.exports = router
+export { router as bookRouter }

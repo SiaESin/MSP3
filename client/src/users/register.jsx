@@ -32,10 +32,8 @@ export default function Register() {
   return (
     <div>
       <form onSubmit={registerUser}>
-        <label>First Name</label>
-        <input type="text" placeholder='Enter First Name...' value= {data.firstName} onChange={(e) => setData({ ...data, firstName: e.target.value })}/>
-        <label>Last Name</label>
-        <input type="text" placeholder='Enter Last Name...' value= {data.lastName} onChange={(e) => setData({ ...data, lastName: e.target.value })}/>
+        <label>Name</label>
+        <input type="text" placeholder='Enter Name...' value= {data.name} onChange={(e) => setData({ ...data, name: e.target.value })}/>
         <label>Email</label>
         <input type="email" placeholder='Enter Email...' value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
         <label>Password</label>

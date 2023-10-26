@@ -5,20 +5,20 @@ import Home from './home'
 import Nav from './navbar'
 import About from './Components/about'
 import Books from './Components/books'
-import BookDetails from './Components/bookdetails'
+
 import Contact from './Components/contact'
 import Login from './users/login'
 import Register from './users/register'
 import { Toaster } from 'react-hot-toast';
 
-axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.baseURL = 'http://localhost:3001'
 axios.defaults.withCredentials = true
 
 function App() {
   return (
       <div className="App">
         <Nav />
-        <Toaster position="top-center" toastOptions={{duration: 3000}} />
+        <Toaster position="top-center" toastOptions={{duration: 2000}} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

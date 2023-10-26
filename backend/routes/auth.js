@@ -1,8 +1,8 @@
-const express = require('express')
-const router = express.Router()
-const cors = require('cors')
-const { test, registerUser } = require('../controllers/users')
+import express from 'express';
+import cors from 'cors';
+import { registerUser } from '../controllers/users.js';
 
+const router = express.Router()
 //middleware
 router.use(
     cors({
@@ -11,10 +11,10 @@ router.use(
     })
 )
 
-router.get('/', test)
+// router.get('/', test)
 router.post('/register', registerUser)
 // router.post('/login', loginUser)
 
-module.exports = router
+export { router as userRouter };
 
 //crash 45:30

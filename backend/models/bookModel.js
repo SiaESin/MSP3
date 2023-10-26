@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')  
+import mongoose from "mongoose"; 
 
 const bookSchema = new mongoose.Schema({
     name: {type: String, required: true, unique: true},
@@ -6,8 +6,9 @@ const bookSchema = new mongoose.Schema({
     date: {type: Date, default: Date.now},
     description: {type: String, default: 'A great book!'},
     price: {type: Number, required: true},
-    image: {type: String, default: '../client/public/assets/comingsoon.jpg' }
+    image: {type: String, default: 'https://via.placeholder.com' }
 })
 
-const BookModel = mongoose.model('Book', bookSchema)
-module.exports = BookModel 
+export const BookModel = mongoose.model('Book', bookSchema) 
+
+export default BookModel
