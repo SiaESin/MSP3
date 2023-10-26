@@ -37,6 +37,17 @@ nav a {
 nav a:hover {
     color: #CCA43B;
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home img {
+    width: 750px;
+}
+
 .about-section {
     border: var(--border) 2px solid;
     border-radius: 30px;
@@ -115,6 +126,9 @@ nav a:hover {
         color: var(--maintext);
         background-color: rgba(0, 0, 0, 0);
         border: none;
+    }
+    .home img {
+        width: 90%;
     }
     .about {
         text-align: center;
