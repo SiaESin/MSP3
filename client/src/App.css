@@ -9,32 +9,55 @@ html {
     box-sizing: border-box;
     color: var(--maintext);
     background-color: var(--bg);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 h1 {
-    text-align: center;
     font-size: 4em;
 }
 a {
     color: var(--maintext);
     font-weight: bold;
 }
-
 .flex-container {
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    margin-top: 10px;
+}
+nav a {
+    color: #fff;
+    background-color: #242F40;
+    font-size: 2em;
+    padding: 20px;
+    border-bottom: #CCA43B solid 2px;
+}
+nav a:hover {
+    color: #CCA43B;
 }
 
   @media (max-width: 800px) {
-    .flex-container {
-        flex-direction: column;
+    html {
         text-align: center;
     }
+    h1 {
+        color: #CCA43B;
+        background-color: #242F40;
+        padding: 5px 20px 10px 20px;
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin: 0;
+    }
     nav a {
-        font-size: 2.5em;
+        color: var(--maintext);
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
     }
-    .information h3 {
-        font-size: 35px;
-    }
+
     .information {
         text-align: center;
         margin: 10px;
