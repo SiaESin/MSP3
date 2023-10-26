@@ -20,7 +20,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000; // Corrected PORT default value
 
 // Use process.env.MONGO_URI directly without quotes
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('process.env.MONGO_URI', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {

@@ -5,10 +5,14 @@ import Home from './home'
 import Nav from './Navigation'
 import About from './Components/about'
 import Books from './Components/books'
-import BookDetails from './Components/bookdetails'
 import Contact from './Components/contact'
 import LoginForm from './users/login'
 import SignUpForm from './users/signup'
+
+// import BookDetails from './Components/bookdetails'
+// import cancelCart from './Components/Stripe Payments/cancelCart'
+// import PaytConfirmation from './Components/Stripe Payments/PaytConfirmation'
+// import checkout from './Components/Stripe Payments/checkout'
 
 function App() {
   return (
@@ -19,10 +23,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/bookdetails" element={<BookDetails />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<SignUpForm />} />
-          <Route path="/signup" element={<LoginForm />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/signup" element={<SignUpForm />} />
         </Routes>
       </div>
   </Router>
@@ -30,7 +33,9 @@ function App() {
 }
 
 export default App;
-    
+
+
+{/* <Route path="/bookdetails" element={<BookDetails />} /> */} 
 
     // <CurrentUserProvider>
     //   <BrowserRouter>

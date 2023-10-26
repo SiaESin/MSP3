@@ -1,7 +1,22 @@
-/* Mobile */
+:root {
+    --maintext: #242F40;
+    --icon: #CCA43B;
+    --border: #363636;
+    --bg: #E5E5E5;
+}
+
+/* Main */
+
+.App {
+  color: var(--maintext);
+  background-color: var(--bg);
+}
+
+/* Mobile /
 
 
-
+/ Desktop */
 @media (min-width: 700px){
 
 }
+
