@@ -49,6 +49,7 @@ const authors = [
   "Dan Brown",
   "Patricia Briggs",
   "Stephen Chbosky",
+  "Harlan Coben",
 ]
 
 const cost = [
