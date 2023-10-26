@@ -63,7 +63,7 @@ const cost = [
 	"$20.00",
   ];
 export default function books() {
-  function formatbookTitle(title) {
+  function formatBookTitle(title) {
     const words = title.split("-");
     const formattedWords = words.map(
       (word) => word.charAt(0).toUpperCase() + word.slice(1)
@@ -79,13 +79,12 @@ export default function books() {
         {booklist.map((book, index) => (
           <div className={`grid-item homebooks ${book}`} key={index}>
             <img src={imagePaths[index]} alt={`Poster for ${book}`} />
-            <Link className="link" to={`/${book}`}>
-              <h3>{formatbookTitle(book)}</h3>
+            <Link className="link" to={`/book/${index}`}> {/* Navigate to the book details page */}
+              <h3>{formatBookTitle(book)}</h3>
             </Link>
-    
             <p className="author">{authors[index]}</p>
             <p className="cost">{cost[index]}</p>
-            <p className="summary">{bookSummary[index]}</p>
+            
 
           </div>
         ))}
