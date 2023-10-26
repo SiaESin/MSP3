@@ -19,6 +19,7 @@ a {
     color: var(--maintext);
     font-weight: bold;
 }
+
 .flex-container {
     display: flex;
     justify-content: center;
