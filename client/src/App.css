@@ -5,7 +5,6 @@
     --bg: #E5E5E5;
 }
 
-/* Main */
 html {
     box-sizing: border-box;
     color: var(--maintext);
@@ -33,17 +32,30 @@ nav a {
     padding: 20px;
     border-bottom: #CCA43B solid 2px;
 }
-nav a:first-of-type {
-    border-left: #CCA43B solid 2px;
-}
 nav a:hover {
     color: #CCA43B;
 }
 
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
   @media (max-width: 800px) {
+    html {
+        text-align: center;
+    }
+    h1 {
+        color: #CCA43B;
+        background-color: #242F40;
+        padding: 5px 20px 10px 20px;
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
     .flex-container {
         flex-direction: column;
+        margin: 0;
+    }
+    nav a {
+        color: var(--maintext);
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
     }
 
     .information {
