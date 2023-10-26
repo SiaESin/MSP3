@@ -49,8 +49,18 @@ const authors = [
   "Dan Brown",
   "Patricia Briggs",
   "Stephen Chbosky",
-  "Harlon Coben",
-];
+]
+
+const cost = [
+	"$20.00",
+	"$20.00",
+	"$20.00",
+	"$20.00",
+	"$20.00",
+	"$20.00",
+	"$20.00",
+	"$20.00",
+  ];
 export default function books() {
   function formatbookTitle(title) {
     const words = title.split("-");
@@ -71,6 +81,8 @@ export default function books() {
               <h3>{formatbookTitle(book)}</h3>
             </Link>
             <p>{authors[index]}</p>
+			<p>{cost[index]}</p>
+		
             <p>{bookSummary[index]}</p>
           </div>
         ))}
