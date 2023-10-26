@@ -8,7 +8,7 @@ const createCharge = async (token, price) => {
     return charge;
   };
   
-  import { db } from "./firebase";
+  import { db } from "./mongodb";
   
   const createOrder = async (charge, price) => {
     const order = {
