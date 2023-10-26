@@ -163,4 +163,81 @@ e1097afa added dependencies cors, bcrypt, mongoose ETC
 ce03f833 backend index,js and controllers
 
 
+f5e358a5 (HEAD -> Nalini, origin/Nalini) Fixed Nav bar from Aly
+9d82d41d Updated all files, added stripe code, fixed books, server and app files, worked on css with team
+d8e34283 Merge branch 'main' into Nalini
+d0c8eee9 Fixed index.js and seeders
+2688590e (origin/siabhon, main) seeding books & backend changes
+48efb482 useHistory correction
+72c99b9e Merge branch 'main' into Nalini
+4c7e3b67 Seeding on backend
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+54c1513f remove client node modules
+f51e4f63 Merge pull request #8 from SiaESin/aly
+180f7816 (origin/aly) changed export default style etc
+71bb078f Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+208c4b9b Merge branch 'main' of https://github.com/SiaESin/MSP3
+
+
+15091153 (HEAD -> aly, origin/main, origin/HEAD, main) Merge pull request #9 from SiaESin/AG
+73c4c5e9 route path updated
+2688590e seeding books & backend changes
+48efb482 useHistory correction
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+54c1513f remove client node modules
+f51e4f63 Merge pull request #8 from SiaESin/aly
+180f7816 (origin/aly) changed export default style etc
+71bb078f Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+208c4b9b Merge branch 'main' of https://github.com/SiaESin/MSP3
+71b2e27d tons of backend
+f9b86871 Updated changelog
+e1097afa added dependencies cors, bcrypt, mongoose ETC
+9efaf202 Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+ce03f833 backend index,js and controllers
+363acbaf Merge branch 'main' of https://github.com/SiaESin/MSP3
+8ae65bfb Merge pull request #7 from SiaESin/aly
+64bb6efb changed file name login and signup
+6e492ee2 Updated change log
+
+
+$ git log --oneline --decorate
+2688590e (HEAD -> siabhon, origin/siabhon, origin/main, origin/HEAD, main) seeding books & backend changes
+48efb482 useHistory correction
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+54c1513f remove client node modules
+f51e4f63 Merge pull request #8 from SiaESin/aly
+180f7816 (origin/aly) changed export default style etc
+71bb078f Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+208c4b9b Merge branch 'main' of https://github.com/SiaESin/MSP3
+71b2e27d tons of backend
+f9b86871 Updated changelog
+e1097afa added dependencies cors, bcrypt, mongoose ETC
+9efaf202 Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+ce03f833 backend index,js and controllers
+
+
+aarongarcia@Aarons-MacBook-Pro MSP3 % git log --oneline --decorate
+a0751d2b (HEAD -> AG, origin/main, origin/HEAD, main) Merge pull request #11 from SiaESin/AG
+10fad3d5 (origin/AG) fixed image
+8ef2525e Merge pull request #10 from SiaESin/Nalini
+f5e358a5 (origin/Nalini) Fixed Nav bar from Aly
+9d82d41d Updated all files, added stripe code, fixed books, server and app files, worked on css with team
+15091153 Merge pull request #9 from SiaESin/AG
+73c4c5e9 route path updated
+d8e34283 Merge branch 'main' into Nalini
+d0c8eee9 Fixed index.js and seeders
+2688590e (origin/siabhon) seeding books & backend changes
+48efb482 useHistory correction
+72c99b9e Merge branch 'main' into Nalini
+4c7e3b67 Seeding on backend
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+
 
