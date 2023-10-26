@@ -1,18 +1,13 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import axios from 'axios';
-import Home from './home'
+import Home from './Components/home'
 import Nav from './navbar'
 import About from './Components/about'
 import Books from './Components/books'
-import BookDetails from './Components/bookdetails'
 import Contact from './Components/contact'
-import Login from './users/login'
-import Register from './users/register'
-import { Toaster } from 'react-hot-toast';
-
-axios.defaults.baseURL = 'http://localhost:3000'
-axios.defaults.withCredentials = true
+import LoginForm from './users/login'
+import SignUpForm from './users/signup'
 
 function App() {
   return (
@@ -23,7 +18,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
-          {/* <Route path="/bookdetails" element={<BookDetails />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />}/>
           <Route path="/register" element={<Register />} />
@@ -34,7 +28,9 @@ function App() {
 }
 
 export default App;
-    
+
+
+{/* <Route path="/bookdetails" element={<BookDetails />} /> */} 
 
     // <CurrentUserProvider>
     //   <BrowserRouter>
