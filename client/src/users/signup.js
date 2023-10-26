@@ -26,12 +26,12 @@ export default function Signup() {
   }
 
   return (
-    <main>
+    <main className='authentication'>
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-sm-6 form-group">
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName">First Name</label><br />
             <input
               required
               value={user.firstName}
@@ -42,7 +42,7 @@ export default function Signup() {
             />
           </div>
           <div className="col-sm-6 form-group">
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="lastName">Last Name</label><br />
             <input
               required
               value={user.lastName}
@@ -55,7 +55,7 @@ export default function Signup() {
         </div>
         <div className="row">
           <div className="col-sm-6 form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email</label><br />
             <input
               type="email"
               required
@@ -67,7 +67,7 @@ export default function Signup() {
             />
           </div>
           <div className="col-sm-6 form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password</label><br />
             <input
               type="password"
               required
