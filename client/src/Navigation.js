@@ -3,19 +3,16 @@
 // import { CurrentUser } from '.client/src/contexts/CurrentUser.js';
 
 export default function Nav() {
-
     return (
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/books">Books</a></li>
-                <li><a href="/bookdetails">Book Details</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/signup">Sign Up</a></li>
-            </ul>
+        <nav className="flex-container">
+            <div className="nav-link logo info"><a href="/">Book Boulevard</a></div>
+            <div className="nav-link logo info"><a href="/about">About</a></div>
+            <div className="nav-link logo info"><a href="/books">Books</a></div>
+            <div className="nav-link logo info"><a href="/contact">Contact</a></div>
+            <div className="nav-link logo info"><a href="/login">Login</a></div>
+            <div className="nav-link logo info"><a href="/signup">Sign Up</a></div>
         </nav>
+ 
     )
 }
 
@@ -31,12 +28,12 @@ export default function Nav() {
 //                 <a href="#" onClick={() => history.push("/sign-up")}>
 //                     Sign Up
 //                 </a>
-//             </li>
+//             
 //             <li style={{ float: 'right' }}>
 //                 <a href="#" onClick={() => history.push("/login")}>
 //                     Login
 //                 </a>
-//             </li>
+//             
 //         </>
 //     )
 
@@ -44,7 +41,7 @@ export default function Nav() {
 //         loginActions = (
 //             <li style={{ float: 'right' }}>
 //                 Logged in as {currentUser.firstName} {currentUser.lastName}
-//             </li>
+//             
 //         )
 //     }
 
@@ -53,20 +50,20 @@ export default function Nav() {
 
 // if (currentUser?.role === 'admin') {
 //     LoginFormButtonButton = (
-//         <li>
+//         
 //             <a href="#" onClick={() => history.push("/contexts/new")}>
 //                 Add User
 //             </a>
-//         </li>
+//         
 //     )
 // }
 
 //     return (
 //         <nav>
 //             <ul>
-//                 <li><a href="#" onClick={() => history.push("/")}>Home</a></li>
-//                 <li><a href="#" onClick={() => history.push("/places")}>User</a></li>
-//                 <li><a href="#" onClick={() => history.push("/places/new")}>Add User</a></li>
+//                 <a href="#" onClick={() => history.push("/")}>Home</a>
+//                 <a href="#" onClick={() => history.push("/places")}>User</a>
+//                 <a href="#" onClick={() => history.push("/places/new")}>Add User</a>
 //                 {loginActions}
 //             </ul>
 //         </nav>

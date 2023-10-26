@@ -1,45 +1,40 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import { useNavigate } from "react-router-dom";
+// import book from "../books/final.jpg";
+import final from "../books/final.jpg";
+import inheritance from "../books/inheritance.jpg";
+import brothers from "../books/brothers.jpg";
+import angelsdemons from "../books/angelsdemons.jpg";
+import moon from "../books/moon.jpg";
+import perks from "../books/perks.jpg";
+import shelter from "../books/shelter.jpg";
 
-export default function Books() {
 
-	const history = useNavigate()
-	
-	const [books, setBooks] = useState([])
+import { Link } from "react-router-dom";
 
-	useEffect(() => {
-		const fetchData = async () => {
-			const response = await fetch(`http://localhost:3000/books`)
-			const resData = await response.json()
-			setBooks(resData)
-		}
-		fetchData()
-	}, [])
 
-	let booksFormatted = books.map((books) => {
-		return (
-			<div className="col-sm-6" key={books.id}>
-				<h2>
-					<a href="#" onClick={() => history.push(`/books/${books.id}`)} >
-						{books.name}
-					</a>
-				</h2>
-				<p className="text-center">
-					{books.description}
-				</p>
-				<img style={{ maxWidth: 200 }} src={books.pic} alt={books.name} />
-				<p className="text-center">
-					{books.price}
-				</p>
-			</div>
-		)
-	})
-	return (
-		<main>
-			<h1>See our Amazing selection of Books!</h1>
-			<div className="row">
-				{booksFormatted}
-			</div>
-		</main>
-	)
+const imagePaths = [final,inheritance,brothers,angelsdemons,moon,perks, shelter ];
+const booklist = ["final", "inheritance", "brothers", "angelsdemons","moon", "perks", "shelter"];
+
+export default function books() {
+    function formatbookTitle(title) {
+        const words = title.split('-');
+        const formattedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+        return formattedWords.join(' ');
+      }
+    return (
+        <main className="bookPage">
+            {/* <NavBar /> */}
+                <div className="grid-container">
+                    {booklist.map((book, index) => (
+                        <div className={`grid-item homebook ${book}`} key={index}>
+                            <img src={imagePaths[index]} alt={`Poster for ${book}.`} />
+                            <Link className="link" to={`/${book}`}>
+                            <h3>{formatbookTitle(book)}</h3>
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+        </main>
+    );
 }
