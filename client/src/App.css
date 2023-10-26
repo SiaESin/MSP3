@@ -48,6 +48,10 @@ nav a:hover {
         border-radius: 30px;
     }
 
+    p {
+        font-size: 1.25em;
+    }
+
     .flex-container {
         flex-direction: column;
         margin: 0;
@@ -58,9 +62,32 @@ nav a:hover {
         border: none;
     }
 
-    .information {
+    .about {
         text-align: center;
         margin: 10px;
-        font-size: 1.5em;
     }
+    .about h3 {
+        font-size: 2em;
+    }
+
+    .books img {
+        width: 300px;
+    }
+    .books .link {
+        font-size: 2em;
+    }
+
+    .books .flex-container {
+        margin-top: -50px;
+        flex-direction: row;
+    }
+    .books .flex-container p {
+        padding: 0 20px;
+        font-size: 2em;
+    }
+    .books .grid-item {
+        margin-bottom: 70px;
+        border-bottom: 2px solid black;
+    }
+
   }

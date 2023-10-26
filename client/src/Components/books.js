@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import Legacy from "../books/Legacy.jpg";
 import final from "../books/final.jpg";
 import inheritance from "../books/inheritance.jpg";
@@ -71,8 +71,9 @@ export default function books() {
   } // Add this closing curly brace
 
   return (
-    <main className="bookPage">
-      {/* <NavBar /> */}
+    <main className="books">
+      <h1>Books</h1>
+
       <div className="grid-container">
         {booklist.map((book, index) => (
           <div className={`grid-item homebooks ${book}`} key={index}>
@@ -80,9 +81,10 @@ export default function books() {
             <Link className="link" to={`/${book}`}>
               <h3>{formatbookTitle(book)}</h3>
             </Link>
-            <p>{authors[index]}</p>
-			<p>{cost[index]}</p>
-		
+            <div className="flex-container">
+              <p className="author">{authors[index]}</p>
+              <p className="cost">{cost[index]}</p>
+		        </div>
             <p>{bookSummary[index]}</p>
           </div>
         ))}
