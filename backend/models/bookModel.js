@@ -6,7 +6,7 @@ const bookSchema = new mongoose.Schema({
     date: {type: Date, default: Date.now},
     description: {type: String, default: 'A great book!'},
     price: {type: Number, required: true},
-    image: {type: String, default: '../client/public/assets/comingsoon.jpg' }
+    image: {type: String, default: 'https://via.placeholder.com' }
 })
 
 const BookModel = mongoose.model('Book', bookSchema)

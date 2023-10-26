@@ -1,9 +1,9 @@
 // const jwt = require('json-web-token')
 // const bcrypt = require('bcrypt');
-// const { db } = require('../models/bookModel');
+const { db } = require('../models/usersModel');
 // const jwt = require('jsonwebtoken');
 // const router = require('express').Router();
-// const { UserModel } = db;
+const { UserModel } = db;
 const User = require('../models/usersModel');
 
 const test = (req, res) => {
@@ -12,24 +12,20 @@ const test = (req, res) => {
 
 const registerUser = async (req, res) => {
   try {
-    const { firstName, lastName, email, password } = req.body;
-    if (!firstName) {
-      return res.json({ error: 'First name is required' });
-    }
-    if (!lastName) {
-      return res.json({ error: 'Last name is required' });
-    }
+    const {name, email, password} = req.body;
+    if (!name) {
+      return res.json({ error: 'Name is required' });
+    }   
     if (!password || password.length < 6) {
       return res.json({ error: 'Password must be at least 6 characters long' });
     }
-    const exist = await User.findOne({ email });
-    if (exist) {
-      return res.json({ error: 'Email already exists' });
-    }
+    // const exist = await User.findOne({ email });
+    // if (exist) {
+    //   return res.json({ error: 'Email already exists' });
+    // }
     res.json({ message: 'User registered successfully' });
     const user = await User.create({
-      firstName,
-      lastName,
+      name,
       email,
       password,
     });

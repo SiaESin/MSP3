@@ -10,7 +10,7 @@ export default function Nav() {
             <div className="nav-link logo info"><a href="/books">Books</a></div>
             <div className="nav-link logo info"><a href="/contact">Contact</a></div>
             <div className="nav-link logo info"><a href="/login">Login</a></div>
-            <div className="nav-link logo info"><a href="/signup">Sign Up</a></div>
+            <div className="nav-link logo info"><a href="/register">Register</a></div>
         </nav>
  
     )
