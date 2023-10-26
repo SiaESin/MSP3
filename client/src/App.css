@@ -2,7 +2,7 @@
     --maintext: #242F40;
     --icon: #CCA43B;
     --border: #363636;
-    --bg: #E5E5E5;
+    --bg: #FFFFFF;
 }
 
 html {
@@ -57,6 +57,7 @@ nav a:hover {
 
 .books img {
     width: 200px;
+   
 }
 
 .grid-container {
