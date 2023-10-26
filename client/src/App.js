@@ -1,31 +1,35 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import axios from 'axios';
 import Home from './home'
-import Nav from './Navigation'
+import Nav from './navbar'
 import About from './Components/about'
 import Books from './Components/books'
 import BookDetails from './Components/bookdetails'
 import Contact from './Components/contact'
-import LoginForm from './users/login'
-import SignUpForm from './users/signup'
+import Login from './users/login'
+import Register from './users/register'
+import { Toaster } from 'react-hot-toast';
+
+axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.withCredentials = true
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <Nav />
+        <Toaster position="top-center" toastOptions={{duration: 3000}} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/bookdetails" element={<BookDetails />} />
+          {/* <Route path="/bookdetails" element={<BookDetails />} /> */}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<SignUpForm />} />
-          <Route path="/signup" element={<LoginForm />} />
+          <Route path="/login" element={<Login />}/>
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
-  </Router>
+  
   )
 }
 
