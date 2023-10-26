@@ -1,34 +1,34 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
+import axios from 'axios';
 import Home from './Components/home'
-import Nav from './Navigation'
+import Nav from './navbar'
 import About from './Components/about'
 import Books from './Components/books'
 import Contact from './Components/contact'
-import LoginForm from './users/login'
-import SignUpForm from './users/signup'
+import Login from './users/login'
+import Register from './users/register'
+import { Toaster } from 'react-hot-toast';
 
-// import BookDetails from './Components/bookdetails'
-// import cancelCart from './Components/Stripe Payments/cancelCart'
-// import PaytConfirmation from './Components/Stripe Payments/PaytConfirmation'
-// import checkout from './Components/Stripe Payments/checkout'
+axios.defaults.baseURL = 'http://localhost:3001'
+axios.defaults.withCredentials = true
+
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <Nav />
+        <Toaster position="top-center" toastOptions={{duration: 3000}} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<LoginForm />} />
-          <Route path="/signup" element={<SignUpForm />} />
+          <Route path="/login" element={<Login />}/>
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
-  </Router>
+  
   )
 }
 
