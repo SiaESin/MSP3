@@ -38,7 +38,7 @@ async function handleSubmit(e) {
 }
 
     return (
-        <main>
+        <main className="authentication">
             <h1>Login</h1>
             {errorMessage !== null
                 ? (

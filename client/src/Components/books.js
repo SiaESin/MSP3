@@ -81,11 +81,11 @@ export default function books() {
             <Link className="link" to={`/${book}`}>
               <h3>{formatbookTitle(book)}</h3>
             </Link>
-            <div className="flex-container">
-              <p className="author">{authors[index]}</p>
-              <p className="cost">{cost[index]}</p>
-		        </div>
-            <p>{bookSummary[index]}</p>
+    
+            <p className="author">{authors[index]}</p>
+            <p className="cost">{cost[index]}</p>
+            <p className="summary">{bookSummary[index]}</p>
+
           </div>
         ))}
       </div>

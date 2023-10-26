@@ -9,11 +9,11 @@ html {
     box-sizing: border-box;
     color: var(--maintext);
     background-color: var(--bg);
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 3em;
+
 }
 h1 {
-    font-size: 4em;
+    font-size: 3.2em;
 }
 a {
     color: var(--maintext);
@@ -36,9 +36,70 @@ nav a:hover {
     color: #CCA43B;
 }
 
+.about h3:nth-of-type(2), .about p:nth-of-type(2){
+    text-align: right;
+}
+
+.books img {
+    width: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+
+.grid-item {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.grid-item .summary {
+    margin: 0 2em;
+    text-align: left;
+}
+.grid-item .summary:nth-child(2) {
+    text-align: right;
+}
+.authentication {
+    display: flex;
+    flex-direction: column;
+}
+.authentication h1 {
+    text-align: center;
+}
+.authentication form {
+    font-size: 1.5em;
+    margin: 0 5em;
+}
+.authentication input {
+    color: #242F40;
+    font-size: 20px;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #CCA43B;
+    border-radius: 4px;
+  }
+.authentication input[type=submit] {
+    color: #CCA43B;
+    background-color: #242F40;
+    font-size: 30px;
+    text-decoration: underline;
+    width: 50%;
+    height: 70px;
+    border-radius: 10px;
+  }
+  .authentication input[type=submit]:hover {
+    color: #a07f2d;
+    background-color: #19202c;
+  }
+
   @media (max-width: 800px) {
     html {
         text-align: center;
+        margin-left: 2px;
+        margin-right: 2px;
     }
     h1 {
         color: #CCA43B;
@@ -76,12 +137,7 @@ nav a:hover {
     .books .link {
         font-size: 2em;
     }
-
-    .books .flex-container {
-        margin-top: -50px;
-        flex-direction: row;
-    }
-    .books .flex-container p {
+    .books p {
         padding: 0 20px;
         font-size: 2em;
     }
@@ -89,5 +145,34 @@ nav a:hover {
         margin-bottom: 70px;
         border-bottom: 2px solid black;
     }
+    .books .grid-item:last-of-type {
+        border-bottom: none;
+    }
+
+    .authentication form {
+        font-size: 1.5em;
+    }
+    .authentication input {
+        width: 300px;
+        height: 50px;
+    }
+
+    .authentication input {
+        font-size: 12px;
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+      }
+
+    .authentication input[type=submit] {
+        font-size: 30px;
+        text-decoration: underline;
+
+        width: 90%;
+        height: 70px;
+
+        margin: 50px 10px;
+        border-radius: 10px;
+      }
 
   }
