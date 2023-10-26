@@ -5,13 +5,16 @@ import Home from './home'
 import Nav from './Navigation'
 import About from './Components/about'
 import Books from './Components/books'
-// import BookDetails from './Components/bookdetails'
 import Contact from './Components/contact'
 import LoginForm from './users/login'
 import SignUpForm from './users/signup'
 
-function App() {
+// import BookDetails from './Components/bookdetails'
+// import cancelCart from './Components/Stripe Payments/cancelCart'
+// import PaytConfirmation from './Components/Stripe Payments/PaytConfirmation'
+// import checkout from './Components/Stripe Payments/checkout'
 
+function App() {
   return (
     <Router>
       <div className="App">
@@ -30,7 +33,9 @@ function App() {
 }
 
 export default App;
-    
+
+
+{/* <Route path="/bookdetails" element={<BookDetails />} /> */} 
 
     // <CurrentUserProvider>
     //   <BrowserRouter>

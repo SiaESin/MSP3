@@ -5,47 +5,36 @@
     --bg: #E5E5E5;
 }
 
-/* Main */
 html {
     box-sizing: border-box;
     color: var(--maintext);
     background-color: var(--bg);
-    margin-left: 1em;
-    margin-right: 1em;
 }
 h1 {
+    text-align: center;
     font-size: 4em;
 }
 a {
     color: var(--maintext);
     font-weight: bold;
 }
+
 .flex-container {
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    margin-top: 10px;
-}
-nav a {
-    color: #fff;
-    background-color: #242F40;
-    font-size: 2em;
-    padding: 20px;
-    border-bottom: #CCA43B solid 2px;
-}
-nav a:first-of-type {
-    border-left: #CCA43B solid 2px;
-}
-nav a:hover {
-    color: #CCA43B;
 }
 
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
   @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
+        text-align: center;
     }
-
+    nav a {
+        font-size: 2.5em;
+    }
+    .information h3 {
+        font-size: 35px;
+    }
     .information {
         text-align: center;
         margin: 10px;
