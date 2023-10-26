@@ -1,10 +1,12 @@
 :root {
     --maintext: #242F40;
-    --icon: #CCA43B;
+    --gold: #CCA43B;
     --border: #363636;
     --bg: #E5E5E5;
+    --lavender: #C6BAC9;
+    --transparent: rgba(0, 0, 0, 0);
 }
-
+        
 html {
     box-sizing: border-box;
     color: var(--maintext);
@@ -14,73 +16,87 @@ html {
 h1 {
     font-size: 3.2em;
     text-align: center;
+    background-color: var(--lavender);
+    border: var(--gold) 2px solid;
+    border-radius: 10px;
+    margin: .7em 4em;
 }
 a {
     color: var(--maintext);
     font-weight: bold;
 }
-
 .flex-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 10px;
-
 }
 nav a {
-    color: #fff;
+    color: var(--lavender);
     background-color: #242F40;
     font-size: 24px;
     padding: 10px;
-
 }
 nav a:hover {
-    color: #CCA43B;
+    color: var(--gold);
 }
-
 .home {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .home img {
     width: 750px;
 }
-
 .about-section {
-    border: var(--border) 2px solid;
-    border-radius: 30px;
+    border: var(--gold) 2px solid;
+    border-radius: 0 100px 100px 10px;
     margin-bottom: 2em;
     padding: 10px 20px;
+    background-color: var(--lavender);
 }
-
 .books img {
     width: 200px;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-  }
-
+}
 .grid-item {
+    background-color: var(--lavender);
     text-align: center;
     margin-bottom: 2em;
     margin: 12px;
-    background-color: var(--bg);
     border-radius: 0 100px 100px 10px;
     border:solid #CCA43B 3px;
     padding: 10px;
     font-size: 1em;
 }
+.grid-item  img {
+    border: var(--gold) 4px solid;
+}
 .grid-item .summary {
     margin: 2em 2em;
     text-align: left;
-    background-color: var(--bg);
     padding: 10px;
     font-size: 16px;
+}
+.contact {
+    text-align: center;
+}
+.contact h2 {
+    color: var(--lavender);
+    background-color: var(--maintext);
+    margin: 0 8em;
+    border: 3px var(--lavender) solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+.contact-info {
+    border: var(--gold) solid 2px;
+    margin: 1em 5em;
+    border-radius: 0 100px 100px 10px;
 }
 .authentication {
     display: flex;
@@ -124,8 +140,8 @@ button[type=submit] {
         color: #CCA43B;
         background-color: #242F40;
         padding: 5px 20px 10px 20px;
-        border: 2px solid white;
         border-radius: 30px;
+        margin: 15px 5px;
     }
     .flex-container {
         flex-direction: column;
@@ -133,7 +149,7 @@ button[type=submit] {
     }
     nav a {
         color: var(--maintext);
-        background-color: rgba(0, 0, 0, 0);
+        background-color: var(--transparent);
         border: none;
     }
     .home img {
@@ -152,30 +168,45 @@ button[type=submit] {
     .books .grid-container {
         display: grid;
         grid-template-columns: auto;
-        padding: 10px;
     }
     .books .link {
-        font-size: 2em;
+        font-size: 24px;
     }
     .books p {
+        margin: 10px;
         padding: 0 20px;
-        font-size: 2em;
+        font-size: 24px;
     }
     .books .grid-item {
-        padding: 30px 0;
-        margin-bottom: 70px;
+        padding: 1em 0;
+        margin-bottom: 1em;
         border-radius: 0 0 100px 100px;
     }
-    .authentication form {
-        font-size: 24px;
-        margin: 0;
+    .contact h2 {
+        margin: 10px 20px;
+        color: var(--maintext);
+        background-color: var(--transparent);
+        border: 2px solid var(--gold);
     }
-    .authentication input {
+    .contact-info {
+        margin: 2em;
+        border-radius: 0 0 70px 70px;
+    }
+    .authentication {
+        font-size: 24px;
+        margin: 1em 10px;
+        align-items: center;
+    }
+    input{
         color: #242F40;
         font-size: 20px;
+        width: 90%;
         padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #CCA43B;
+        border-radius: 4px;
       }
-    .authentication input[type=submit] {
+    button[type=submit] {
         color: #CCA43B;
         background-color: #242F40;
         font-size: 30px;
@@ -183,8 +214,9 @@ button[type=submit] {
         width: 50%;
         height: 70px;
         border-radius: 10px;
+        margin-top: 1em;
       }
-      .authentication input[type=submit]:hover {
+      button[type=submit]:hover {
         color: #a07f2d;
         background-color: #19202c;
       }
