@@ -14,12 +14,12 @@ import {imagePaths, author, cost, title, bookSummary} from "../Components/bookDa
 		<main className="book-details">
 			<h1>{title[selectedBook]}</h1>
 			<div className="grid-container">
-				<img src={imagePaths[selectedBook]} alt={`Poster for ${title[selectedBook]}`} />
+				{/* <img src={imagePaths[selectedBook]} alt={`Poster for ${title[selectedBook]}`} /> */}
+				<div className="buy-button"><BuyButtonComponent /></div>
 				<p className="author">{author[selectedBook]}</p>
 				<p className="cost">{cost[selectedBook]}</p>
 				<p className="summary">{bookSummary[selectedBook]}</p>
 			</div>
-		<BuyButtonComponent />
 	 </main>
 	);
   }
