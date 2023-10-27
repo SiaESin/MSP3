@@ -1,13 +1,3 @@
-const imagePaths = [
-    inheritance,
-    Legacy,
-    final,
-    brothers,
-    angelsdemons,
-    moon,
-    perks,
-    shelter,
-  ];
   const booklist = [
     "The Inheritance Games",
     "The Hawthorne Legacy",
@@ -50,4 +40,4 @@ const imagePaths = [
       "$20.00",
     ];
 
-    export { authors, cost, booklist, bookSummary, imagePaths };
+export { authors, cost, booklist, bookSummary};

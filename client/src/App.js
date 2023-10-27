@@ -8,6 +8,8 @@ import Books from './Components/books'
 import Contact from './Components/contact'
 import Login from './users/login'
 import Register from './users/register'
+import Registered from './Components/registered';
+import BookDetails from './Components/bookdetails';
 import { Toaster } from 'react-hot-toast';
 
 axios.defaults.baseURL = 'http://localhost:3001'
@@ -20,12 +22,15 @@ function App() {
         <Nav />
         <Toaster position="top-center" toastOptions={{duration: 3000}} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />}/>
-          <Route path="/register" element={<Register />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/books" element={<Books />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />}/>
+            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/registered" element={<Registered />} />
+            <Route path="/bookdetails" element={<BookDetails/>} />
         </Routes>
       </div>
   
