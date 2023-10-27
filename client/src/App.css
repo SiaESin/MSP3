@@ -109,8 +109,7 @@ nav a:hover {
     grid-area: c;
     margin: 0 1em;
 }
-.book-details .grid-container img {
-    width: 400px;
+.book-details .grid-container .buy-button {
     grid-area: a;
 }
 .contact {
