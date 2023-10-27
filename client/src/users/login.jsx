@@ -1,15 +1,31 @@
-import {  useState } from "react"
+import { useState } from "react"
 import axios from "axios"
+import { toast } from 'react-hot-toast'
+import { useNavigate } from "react-router-dom"
 // import { CurrentUser } from "../contexts/CurrentUser"
 
 export default function Login() {
-    const [data , setData] = useState({
+    const navigate = useNavigate()
+    const [data, setData] = useState({
         email: '',
         password: '',
     })
-    const loginUser = (e) => {
+    const loginUser = async (e) => {
         e.preventDefault()
-            axios.get('/')
+        const { email, password } = data
+        try {
+            const { data } = await axios.post('/login', {
+                email,
+                password
+            })
+            if (data.error) {
+                toast.error(data.error)
+            } else {
+                setData({})
+                navigate('/')
+            }
+        } catch (error){}
+           
     }
 
     return (
@@ -17,7 +33,7 @@ export default function Login() {
             <h1>Login</h1>
             <form className='authentication' onSubmit={loginUser}>
                 <label>Email</label>
-                <input type="email" placeholder='Enter Email...' value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })}/>
+                <input type="email" placeholder='Enter Email...' value={data.email} onChange={(e) => setData({ ...data, email: e.target.value })} />
                 <label>Password</label>
                 <input type="password" placeholder='Enter Password...' value={data.password} onChange={(e) => setData({ ...data, password: e.target.value })} />
                 <button type="submit">Login</button>
