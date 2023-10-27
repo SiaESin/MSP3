@@ -4,13 +4,22 @@ import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-
 import "./styles.css"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+<head>
+  <script
+    async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+{/* <script>
+
+</script> */}
+</head>
     <App />
     </Router>
   </React.StrictMode>
