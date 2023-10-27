@@ -30,7 +30,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/register" element={<Register />} />
             <Route path="/registered" element={<Registered />} />
-            <Route path="/bookdetails" element={<BookDetails/>} />
+            <Route path="/book/:index" element={<BookDetails />} />
         </Routes>
       </div>
   
