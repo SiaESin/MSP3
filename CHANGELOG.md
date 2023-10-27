@@ -302,3 +302,78 @@ efb5175b adding user registration
 a952cb59 resolve conflicts after merge
 18d3ad69 Merge pull request #21 from SiaESin/AG
 0c0174b8 added the last authors name OOps
+
+
+aarongarcia@Aarons-MacBook-Pro MSP3 % git log --oneline --decorate
+d5b5a9a3 (HEAD -> AG, origin/AG) pushing what i got bookdetails needs help
+1be5e7ec adjusted the book.js so that when you hit the link it will open an array that can go into bookdetails, attempted book details but nothing is showing up
+ebe50a09 commas
+581c61f2 commiting the commas
+feels like ive been doing alot more lol
+nvm this is my change log
+
+
+aarongarcia@Aarons-MacBook-Pro MSP3 % git log --oneline --decorate
+d5b5a9a3 (HEAD -> AG, origin/AG) pushing what i got bookdetails needs help
+1be5e7ec adjusted the book.js so that when you hit the link it will open an array that can go into bookdetails, attempted book details but nothing is showing up
+ebe50a09 commas
+581c61f2 commiting the commas
+:...skipping...
+d5b5a9a3 (HEAD -> AG, origin/AG) pushing what i got bookdetails needs help
+1be5e7ec adjusted the book.js so that when you hit the link it will open an array that can go into bookdetails, attempted book details but nothing is showing up
+ebe50a09 commas
+581c61f2 commiting the commas
+0a0722fa (main) Merge pull request #24 from SiaESin/Nalini
+cda9c82d Fixed prices of books
+560cc931 Merge pull request #23 from SiaESin/aly
+ba78dd76 Fixed form styling + added more mobile styles
+47020ed0 Merge pull request #22 from SiaESin/aly
+b7c3209a Worked on home page image
+77ddc26a Merge branch 'main' of https://github.com/SiaESin/MSP3
+efb5175b adding user registration
+a952cb59 (origin/siabhon) resolve conflicts after merge
+18d3ad69 Merge pull request #21 from SiaESin/AG
+0c0174b8 added the last authors name OOps
+99db3c35 Merge branch 'main' into siabhon
+208b7405 Merge pull request #20 from SiaESin/aly
+04439c68 Website is fully responsive design
+34ef4e6c Merge pull request #19 from SiaESin/aly
+d2fec977 Mobile and desktop basic styles in
+b26a8258 Merge pull request #18 from SiaESin/AG
+4c3e51c6 replaced the home page image with url which sucks but if we can fix it up then we should
+fc9f993e Merge pull request #17 from SiaESin/aly
+c4b932c3 Mobile style for books and about page
+2774dc8f Merge pull request #16 from SiaESin/aly
+4c9f80d5 Styling update 1
+3bf8f5dd Merge pull request #15 from SiaESin/AG
+a38b8de6 added prices ready for styling
+be8529fb Started css
+:
+
+
+f99eeba5 (HEAD -> siabhon, origin/siabhon) user dashboard
+95e8b03d registration works
+60ee4985 debug auth and login
+9e12a91e (origin/main, origin/HEAD, main) Merge pull request #28 from SiaESin/aly
+3d650fae Updated styles
+a3d4f7cd Merge pull request #27 from SiaESin/AG
+1be5e7ec adjusted the book.js so that when:
+
+
+ab929d9c (HEAD -> Nalini, origin/Nalini) Merge branch 'main' into Nalini
+a98ccf09 Adding change logs
+2705dc6e (main) Merge pull request #32 from SiaESin/aly
+539714db Basic book details for nalini
+1a88942b Merge pull request #31 from SiaESin/AG
+d5b5a9a3 (origin/AG) pushing what i got bookdetails needs help
+a7b99c0f Merge pull request #30 from SiaESin/aly
+a34dba85 Created register page
+af55d990 Merge pull request #29 from SiaESin/Nalini
+fa1d068f Completed stripe payment link
+9e12a91e Merge pull request #28 from SiaESin/aly
+3d650fae Updated styles
+a3d4f7cd Merge pull request #27 from SiaESin/AG
+1be5e7ec adjusted the book.js so that when you hit the link it will open an array that can go into bookdetails, attempted book details but nothing is showing up
+d87ce923 Merge pull request #26 from SiaESin/aly
+
+
