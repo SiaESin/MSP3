@@ -1,11 +1,11 @@
 
-// function Checkout() {
-//     return (
-//         <h1>Ready to checkout!</h1>
-//     )
-// }
+function Checkout() {
+    return (
+        <h1>Ready to checkout!</h1>
+    )
+}
 
-// export default Checkout;
+export default Checkout;
 
 
 
