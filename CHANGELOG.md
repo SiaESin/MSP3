@@ -279,3 +279,26 @@ cdf38317 edit
 5fcb5c36 updating front end code
 078153c4 backend node and express
 e607b3da Merge pull request #3 from SiaESin/AG
+
+
+9e12a91e (HEAD -> aly, origin/main, origin/HEAD, main) Merge pull request #28 from SiaESin/aly
+3d650fae (origin/aly) Updated styles
+a3d4f7cd Merge pull request #27 from SiaESin/AG
+1be5e7ec adjusted the book.js so that when you hit the link it will open an array that can go into bookdetails, attempted book details but nothing is showing up
+d87ce923 Merge pull request #26 from SiaESin/aly
+934ada74 Merge branch 'main' into aly
+3217f71b Updated css both mobile and desktop
+9c815e97 Merge pull request #25 from SiaESin/AG
+ebe50a09 commas
+581c61f2 commiting the commas
+0a0722fa Merge pull request #24 from SiaESin/Nalini
+cda9c82d Fixed prices of books
+560cc931 Merge pull request #23 from SiaESin/aly
+ba78dd76 Fixed form styling + added more mobile styles
+47020ed0 Merge pull request #22 from SiaESin/aly
+b7c3209a Worked on home page image
+77ddc26a Merge branch 'main' of https://github.com/SiaESin/MSP3
+efb5175b adding user registration
+a952cb59 resolve conflicts after merge
+18d3ad69 Merge pull request #21 from SiaESin/AG
+0c0174b8 added the last authors name OOps
