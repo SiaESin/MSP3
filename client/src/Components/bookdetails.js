@@ -15,9 +15,8 @@ import authors from "../books/authors";
 import cost from "../books/cost";
 
 
-
-  import React from "react";
-  import { Link, useParams } from "react-router-dom";
+import React from "react";
+import { Link, useParams } from "react-router-dom";
   
   
   const books = [imagePaths, booklist, bookSummary, authors, cost];
