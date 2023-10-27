@@ -11,8 +11,8 @@ export default function Register() {
     password: '',
   })
   
-  const registerUser = async (e) => {
-    e.preventDefault();
+  const registerUser = async (e) => { 
+    e.preventDefault()
     const { name, email, password } = data
     try {
       const { data } = await axios.post('/register', { name, email, password });
@@ -20,8 +20,8 @@ export default function Register() {
         toast.error(data.error)
       } else {
         setData({})
-        toast.success('Registration Successful')
-        navigate('/')
+        toast.success('Registration Successful, Welcome!')
+        navigate('/login')
         }
       
     } catch (error) {
@@ -29,9 +29,11 @@ export default function Register() {
     }
   }
 
+
   return (
     <div>
       <h1>Register</h1>
+      
       <form className='authentication' onSubmit={registerUser}>
       <label>Name</label>
         <input type="text" placeholder='Enter Name...' value= {data.name} onChange={(e) => setData({ ...data, name: e.target.value })}/>
