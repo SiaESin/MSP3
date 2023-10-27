@@ -3,7 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import BuyButtonComponent from "./stripe-payments/BuyButton";
 
-import {imagePaths, author, cost, title, bookSummary} from "../Components/bookData";
+import {productLinks, author, cost, title, bookSummary} from "../Components/bookData";
 
   export default function BookDetails() {
 	const { index } = useParams();
