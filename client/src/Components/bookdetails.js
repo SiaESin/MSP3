@@ -1,3 +1,5 @@
+
+
 // import { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import Legacy from "../books/Legacy.jpg";
@@ -9,10 +11,8 @@ import moon from "../books/moon.jpg";
 import perks from "../books/perks.jpg";
 import shelter from "../books/shelter.jpg";
 import imagePaths from "../books/imagePaths";
-import booklist from "../books/booklist";
-import bookSummary from "../books/bookSummary";
-import authors from "../books/authors";
-import cost from "../books/cost";
+import {authors, cost, booklist, bookSummary, imagePaths} from "../Components/bookData/booklist";
+
 
 
 
@@ -20,46 +20,21 @@ import cost from "../books/cost";
   import { Link, useParams } from "react-router-dom";
   
   
-  const books = [imagePaths, booklist, bookSummary, authors, cost];
+//   const books = [imagePaths, booklist, bookSummary, authors, cost];
 
   
-  export default function BookList() {
-	return (
-	  <div className="books">
-		<h1>Books</h1>
-  
-		<div className="grid-container">
-		  {books.map((book, index) => (
-			<div className={`grid-item homebooks ${book.title}`} key={index}>
-			  <img src={book.image} alt={`Poster for ${book.title}`} />
-			  <Link to={`/book/${index}`}> {/* Navigate to the book details page */}
-				<h3>{book.title}</h3>
-			  </Link>
-			</div>
-		  ))}
-		</div>
-	  </div>
-	);
-  }
-  
-  export function BookDetailsPage() {
-	const { id } = useParams();
-	const selectedBook = books[id];
-  
-	return (
-	  <div className="books">
-		<Link to="/">Go Back to Book List</Link>
-		<BookDetails book={selectedBook} />
-	  </div>
-	);
-  }
 
 
 
-  import React from "react";
 
   export default function BookDetails({ book }) {
+	const bookFromURL = window.location.pathname.replace("/", "");
+
+	const  selectedBookIndex = booklist.index(bookFromURL);
+
 	return (
+	  <main className="book-details">
+		<h1>hiii</h1>
 	  <div className="book-details">
 		<h1>{book.title}</h1>
 		<img src={book.image} alt={`Poster for ${book.title}`} />
@@ -67,12 +42,13 @@ import cost from "../books/cost";
 		<p className="cost">{book.cost}</p>
 		<p className="summary">{book.summary}</p>
 	  </div>
+	 </main>
 	);
   }
 
 
 
-
+// this is the code from up above
 
 
 
