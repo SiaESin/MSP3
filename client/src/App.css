@@ -85,6 +85,33 @@ nav a:hover {
     padding: 10px;
     font-size: 16px;
 }
+.book-details .grid-container{
+    display: grid;
+    grid-template-areas:
+        "a a b b b b"
+        "a a c c c c"
+        "a a d d d d";
+    align-items: center;
+    text-align: center;
+}
+.book-details .grid-container .cost {
+    grid-area: d;
+    margin: 0 1em;
+    font-size: 24px;
+}
+.book-details .grid-container .author {
+    grid-area: b;
+    margin: 0 1em;
+    font-weight: bold;
+    font-size: 30px;
+}
+.book-details .grid-container .summary {
+    grid-area: c;
+    margin: 0 1em;
+}
+.book-details .grid-container .buy-button {
+    grid-area: a;
+}
 .contact {
     text-align: center;
 }
