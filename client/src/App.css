@@ -71,18 +71,20 @@ head h1 a:hover {
     color: var(--light);
 }
 /* Homepage  */
-.flex-container {
+.home .flex-container {
     display: flex;
     align-items: center;
     font-family: var(--roboto-font);
+    flex-direction: column;
+    margin: 0 5em;
 }
 .home .flex-container h3 {
     font-size: 16px;
     font-weight: normal;
-    margin: 0 2em;
+    margin: 2em;
 }
 .home img {
-    width: 500px;
+    width: 700px;
 }
 /* About Page  */
 .about .flex-container {
@@ -109,8 +111,10 @@ head h1 a:hover {
     margin: 1em;
 }
 /* Book Details  */
-.flex-container {
+.book-details .flex-container {
     margin: 20px;
+    display: flex;
+    flex-direction: row;
 }
 .book-info {
     padding: 20px;
@@ -188,6 +192,7 @@ head h1 a:hover {
     /* Hompage  */
     .home .flex-container {
         flex-direction: column;
+        margin: 2px;
     }
     .home img {
         margin: 10px;
@@ -221,6 +226,9 @@ head h1 a:hover {
         padding: 1em 0;
         margin-bottom: 1em;
         border-radius: 0 0 100px 100px;
+    }
+    .book-details .flex-container {
+        flex-direction: column;
     }
     .contact h2 {
         margin: 10px 20px;
