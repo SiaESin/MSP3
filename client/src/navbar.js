@@ -4,14 +4,17 @@
 
 export default function Nav() {
     return (
-        <nav className="flex-container">
-            <div className="nav-link logo info"><a href="/">Book Boulevard</a></div>
-            <div className="nav-link logo info"><a href="/about">About</a></div>
-            <div className="nav-link logo info"><a href="/books">Books</a></div>
-            <div className="nav-link logo info"><a href="/contact">Contact</a></div>
-            <div className="nav-link logo info"><a href="/login">Login</a></div>
-            <div className="nav-link logo info"><a href="/register">Register</a></div>
-        </nav>
+        <head>
+            <nav className="flex-container">
+                <div className="nav-link logo info"><a href="/">Home</a></div>
+                <div className="nav-link logo info"><a href="/about">About</a></div>
+                <div className="nav-link logo info"><a href="/books">Books</a></div>
+                <div className="nav-link logo info"><a href="/contact">Contact</a></div>
+                <div className="nav-link logo info"><a href="/login">Login</a></div>
+                <div className="nav-link logo info"><a href="/register">Register</a></div>
+            </nav>
+            <h1><a href="/">Book Boulevard</a></h1>
+        </head>
  
     )
 }

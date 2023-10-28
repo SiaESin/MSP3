@@ -4,7 +4,8 @@ export default function About() {
 
 	return (
 		<main className="about">
-			<h1>About Us</h1>
+			<h2>About Us</h2>
+			<div className="flex-container">
 				<div className="about-section">
 					<h3>Welcome to Book Boulevard!</h3>
 					<p>At Book Boulevard, we are more than just an online bookstore; we are a labor of love created by a team of passionate student software engineers who share a deep appreciation for books and a love for creating beautiful websites. Our journey began with a simple idea, to build an online space where book lovers like us could discover, explore, and indulge in the literary world.</p>
@@ -19,6 +20,7 @@ export default function About() {
 					<h3>The People Behind the Magic</h3>
 					<p>We are a team of student software engineers who share a common passion for books. Each of us brings a unique perspective and skill set to the table, and together we've crafted this online bookstore with love and dedication. We're not just about selling books, we're about fostering a community of book enthusiasts and creating a virtual haven for bookworms of all kinds.</p>
 				</div>
+			</div>
 		</main>
 	)
 }

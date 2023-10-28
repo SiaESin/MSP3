@@ -3,7 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import BuyButtonComponent from "./stripe-payments/BuyButton";
 
-import {productLinks, author, cost, title, bookSummary} from "../Components/bookData";
+import {author, cost, title, bookSummary} from "../Components/bookData";
 
   export default function BookDetails() {
 	const { index } = useParams();
@@ -12,13 +12,15 @@ import {productLinks, author, cost, title, bookSummary} from "../Components/book
 
 	return (
 		<main className="book-details">
-			<h1>{title[selectedBook]}</h1>
-			<div className="grid-container">
+			<h2>{title[selectedBook]}</h2>
+			<div className="flex-container">
 				{/* <img src={imagePaths[selectedBook]} alt={`Poster for ${title[selectedBook]}`} /> */}
 				<div className="buy-button"><BuyButtonComponent /></div>
-				<p className="author">{author[selectedBook]}</p>
-				<p className="cost">{cost[selectedBook]}</p>
-				<p className="summary">{bookSummary[selectedBook]}</p>
+				<div>
+					<p className="author">{author[selectedBook]}</p>
+					<p className="cost">{cost[selectedBook]}</p>
+					<p className="summary">{bookSummary[selectedBook]}</p>
+				</div>
 			</div>
 	 </main>
 	);
