@@ -385,3 +385,116 @@ c13eab57 Merge pull request #36 from SiaESin/Nalini
 2e5cbd4c Still working on stripe
 
 
+56b26b9c (HEAD -> Nalini, origin/Nalini) Completing change logs
+f15f0264 completed stripe changes
+88b2d979 (main) Merge pull request #37 from SiaESin/aly
+9ffe5f8c Stripe button array connected
+c13eab57 Merge pull request #36 from SiaESin/Nalini
+65dbf43c working on stripe
+2e5cbd4c Still working on stripe
+271710d3 Merge pull request #35 from SiaESin/aly
+247523a5 Merge branch 'main' into aly
+8e3526c4 Book details page html done
+5b276430 Merge pull request #34 from SiaESin/aly
+ff125699 Fixed it
+ab758f58 Book details works with index
+83ebf10e (origin/siabhon) debug
+9aa44851 Merge branch 'main' into siabhon
+f99eeba5 user dashboard
+95e8b03d registration works
+561d8b32 Merge pull request #33 from SiaESin/Nalini
+60ee4985 debug auth and login
+ab929d9c Merge branch 'main' into Nalini
+
+
+cda02be2 (HEAD -> main, origin/main, origin/HEAD, aly) Merge pull request #39 from SiaESin/aly
+65346b73 (origin/aly) CSS Stripe
+131f8c6a Merge pull request #38 from SiaESin/Nalini
+56b26b9c Completing change logs
+143dfae3 working reg and login with dashboard
+f15f0264 completed stripe changes
+88b2d979 Merge pull request #37 from SiaESin/aly
+9ffe5f8c Stripe button array connected
+c13eab57 Merge pull request #36 from SiaESin/Nalini
+65dbf43c working on stripe
+2e5cbd4c Still working on stripe
+271710d3 Merge pull request #35 from SiaESin/aly
+247523a5 Merge branch 'main' into aly
+8e3526c4 Book details page html done
+5b276430 Merge pull request #34 from SiaESin/aly
+ff125699 Fixed it
+ab758f58 Book details works with index
+83ebf10e debug
+9aa44851 Merge branch 'main' into siabhon
+f99eeba5 user dashboard
+95e8b03d registration works
+
+
+583ddcbe (HEAD -> AG, origin/AG) commit to see whats wrong
+cda02be2 (origin/main, origin/HEAD, main) Merge pull request #39 from SiaESin/aly
+65346b73 (origin/aly) CSS Stripe
+131f8c6a Merge pull request #38 from SiaESin/Nalini
+56b26b9c (origin/Nalini) Completing change logs
+143dfae3 working reg and login with dashboard
+f15f0264 completed stripe changes
+88b2d979 Merge pull request #37 from SiaESin/aly
+9ffe5f8c Stripe button array connected
+c13eab57 Merge pull request #36 from SiaESin/Nalini
+65dbf43c working on stripe
+2e5cbd4c Still working on stripe
+271710d3 Merge pull request #35 from SiaESin/aly
+247523a5 Merge branch 'main' into aly
+8e3526c4 Book details page html done
+5b276430 Merge pull request #34 from SiaESin/aly
+ff125699 Fixed it
+ab758f58 Book details works with index
+83ebf10e (origin/siabhon) debug
+9aa44851 Merge branch 'main' into siabhon
+f99eeba5 user dashboard
+95e8b03d registration works
+561d8b32 Merge pull request #33 from SiaESin/Nalini
+60ee4985 debug auth and login
+ab929d9c Merge branch 'main' into Nalini
+a98ccf09 Adding change logs
+2705dc6e Merge pull request #32 from SiaESin/aly
+539714db Basic book details for nalini
+1a88942b Merge pull request #31 from SiaESin/AG
+d5b5a9a3 pushing what i got bookdetails needs help
+a7b99c0f Merge pull request #30 from SiaESin/aly
+a34dba85 Created register page
+af55d990 Merge pull request #29 from SiaESin/Nalini
+fa1d068f Completed stripe payment link
+9e12a91e Merge pull request #28 from SiaESin/aly
+
+
+f7dc0f21 (HEAD -> Isaac) starting to style navbar
+76bc389c latest commit
+39931f83 node module corrections and debugging
+e9dd1eda delete
+6c2759f1 removing node modules
+54c1513f remove client node modules
+f51e4f63 Merge pull request #8 from SiaESin/aly
+180f7816 changed export default style etc
+71bb078f Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+208c4b9b Merge branch 'main' of https://github.com/SiaESin/MSP3
+71b2e27d tons of backend
+f9b86871 Updated changelog
+e1097afa added dependencies cors, bcrypt, mongoose ETC
+9efaf202 Merge branch 'main' of https://github.com/SiaESin/MSP3 into siabhon
+ce03f833 backend index,js and controllers
+363acbaf Merge branch 'main' of https://github.com/SiaESin/MSP3
+8ae65bfb Merge pull request #7 from SiaESin/aly
+64bb6efb changed file name login and signup
+6e492ee2 Updated change log
+a37afdbf Completed front end components, pushing to the main
+58a943b9 Merge pull request #5 from SiaESin/AG
+6ec416d9 fixed up about, contact, book details
+02748ac8 Merge pull request #4 from SiaESin/aly
+b5519a95 Aly: Nav and App.js router
+a2162b7a Merge branch 'main' into siabhon
+62334ae6 gitignore
+06174877 gitignore
+68736477 Merge branch 'main' of https://github.com/SiaESin/MSP3
+6d060199 Merge branch 'Nalini' of https://github.com/SiaESin/MSP3
+6925989b Merge branch 'main' into Nalini
+05879bd0 edit
