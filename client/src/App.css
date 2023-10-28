@@ -112,6 +112,9 @@ head h1 a:hover {
 .flex-container {
     margin: 20px;
 }
+.book-info {
+    padding: 20px;
+}
 /* Contact Page  */
 .contact {
     justify-content: center;
@@ -192,8 +195,11 @@ head h1 a:hover {
     }
     /* About Page  */
     .flex-container {
+        flex-direction: column;
         text-align: center;
         margin: 10px;
+    }
+    .about .flex-container {
         flex-direction: column;
     }
     .books img {
