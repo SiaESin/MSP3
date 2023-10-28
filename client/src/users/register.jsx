@@ -32,7 +32,7 @@ export default function Register() {
 
   return (
     <div>
-      <h1>Register</h1>
+      <h2>Register</h2>
       
       <form className='authentication' onSubmit={registerUser}>
       <label>Name</label>

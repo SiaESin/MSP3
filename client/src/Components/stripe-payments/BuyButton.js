@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { productLinks } from '../bookData';
+import { productLinks, keyLinks } from '../bookData';
 import { useParams } from 'react-router';
 
 function BuyButtonComponent() {
@@ -7,6 +7,7 @@ function BuyButtonComponent() {
   const { index } = useParams();
 	const selectedBook = parseInt(index);
 	const paymentLink = productLinks[selectedBook]
+  const key = keyLinks[selectedBook]
 
   // Paste the stripe-buy-button snippet in your React component
   return (

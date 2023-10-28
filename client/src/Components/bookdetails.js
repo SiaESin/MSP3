@@ -16,7 +16,7 @@ import {author, cost, title, bookSummary} from "../Components/bookData";
 			<div className="flex-container">
 				{/* <img src={imagePaths[selectedBook]} alt={`Poster for ${title[selectedBook]}`} /> */}
 				<div className="buy-button"><BuyButtonComponent /></div>
-				<div>
+				<div className="book-info">
 					<p className="author">{author[selectedBook]}</p>
 					<p className="cost">{cost[selectedBook]}</p>
 					<p className="summary">{bookSummary[selectedBook]}</p>
