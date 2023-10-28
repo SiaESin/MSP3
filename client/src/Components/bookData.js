@@ -30,6 +30,26 @@ const imagePaths = [
     "The Perks of Being a Wallflower",
     "Shelter"
   ];
+
+  const keyLinks = [
+    // The Inheritance Games (1)
+    "pk_test_51O4tNdJNUdFsy0RxW2OOoCizqLfojhZ2hz23uR8n7ARHHoFMwBTevbQCB7AAzn2gj5Ky8Cr1REZQoqUmv05m86PF00xW4cGpzy",
+    // The Hawthorne Legacy
+    "pk_test_51O4tNdJNUdFsy0RxW2OOoCizqLfojhZ2hz23uR8n7ARHHoFMwBTevbQCB7AAzn2gj5Ky8Cr1REZQoqUmv05m86PF00xW4cGpzy",
+    // The Final Gambit
+    "pk_test_51O4tNdJNUdFsy0RxW2OOoCizqLfojhZ2hz23uR8n7ARHHoFMwBTevbQCB7AAzn2gj5Ky8Cr1REZQoqUmv05m86PF00xW4cGpzy",
+    // The Brothers Hawthorne
+    "pk_live_51O4tNdJNUdFsy0RxFlyGv5xfD32NdCxk2gmAQtl9bwWMTc1uf8oDMEisucnVJ4OosRWzcEb6FDaIBgFQztZ6JkH800vix2hlXo",
+    // Angels & Demons
+    "pk_live_51O4tNdJNUdFsy0RxFlyGv5xfD32NdCxk2gmAQtl9bwWMTc1uf8oDMEisucnVJ4OosRWzcEb6FDaIBgFQztZ6JkH800vix2hlXo",
+    // Moon Called
+    "pk_test_51O4tNdJNUdFsy0RxW2OOoCizqLfojhZ2hz23uR8n7ARHHoFMwBTevbQCB7AAzn2gj5Ky8Cr1REZQoqUmv05m86PF00xW4cGpzy",   
+    // The Perks of Being a Wallflower
+    "pk_test_51O4tNdJNUdFsy0RxW2OOoCizqLfojhZ2hz23uR8n7ARHHoFMwBTevbQCB7AAzn2gj5Ky8Cr1REZQoqUmv05m86PF00xW4cGpzy",
+    // Shelter
+    "pk_live_51O4tNdJNUdFsy0RxFlyGv5xfD32NdCxk2gmAQtl9bwWMTc1uf8oDMEisucnVJ4OosRWzcEb6FDaIBgFQztZ6JkH800vix2hlXo"
+  ]
+
   const bookSummary = [
     "Avery Grambs has a plan for a better future: survive high school, win a scholarship, and get out. But her fortunes change in an instant when billionaire Tobias Hawthorne dies and leaves Avery virtually his entire fortune. The catch, Avery has no idea why—or even who Tobias Hawthorne is.To receive her inheritance, Avery must move into sprawling, secret passage-filled Hawthorne House, where every room bears the old man's touch—and his love of puzzles, riddles, and codes. Unfortunately for Avery, Hawthorne House is also occupied by the family that Tobias Hawthorne just dispossessed. This includes the four Hawthorne grandsons: dangerous, magnetic, brilliant boys who grew up with every expectation that one day, they would inherit billions. Heir apparent Grayson Hawthorne is convinced that Avery must be a conwoman, and he is determined to take her down. His brother, Jameson, views her as their grandfathers long last hurrah: a twisted riddle, a puzzle to be solved. Caught in a world of wealth and privilege with danger around every turn, Avery will have to play the game herself just to survive. The games continue in The Hawthorne Legacy, The Final Gambit, and The Brothers Hawthorne.",
     "The Inheritance Games ended with a bombshell, and now heiress Avery Grambs has to pick up the pieces and find the man who might hold the answers to all of her questions—including why Tobias Hawthorne left his entire fortune to Avery, a virtual stranger, rather than to his own daughters or grandsons. Thanks to a DNA test, Avery knows she is not a Hawthorne by blood, but clues pile up hinting at a deeper connection to the family than she had ever imagined. As the mystery grows and the plot thickens, Grayson and Jameson, two of the enigmatic and magnetic Hawthorne grandsons, continue to pull Avery in different directions. And there are threats lurking around every corner, as adversaries emerge who will stop at nothing to see Avery out of the picture—by any means necessary. With nonstop action, aspirational jet setting, Knives Out, like family intrigue, swoonworthy romance, and billions of dollars hanging in the balance, The Hawthorne Legacy will thrill Jennifer Lynn Barnes fans and new readers alike.",
@@ -67,10 +87,10 @@ const imagePaths = [
       "buy_btn_1O5e7UJNUdFsy0RxdMTRQVu7", // The Hawthorne Legacy
       "buy_btn_1O5djjJNUdFsy0RxwIictUzY", // The Final Gambit
       "buy_btn_1O5duPJNUdFsy0RxcId6BeLr", // The Brothers Hawthorne
-      "buy_btn_1O5e06JNUdFsy0RxfhpJusRR", // Angels & Demons
+      "buy_btn_1O6IExJNUdFsy0Rx2HRVWBDj", // Angels & Demons
       "buy_btn_1O5e4PJNUdFsy0RxZKL3gNgR", // Moon Called
       "buy_btn_1O5dk3JNUdFsy0RxrDoo9WIf", // The Perks of Being a Wallflower
-      "buy_btn_1O5dxqJNUdFsy0RxsCEGDLOo"  // Shelter
+      "buy_btn_1O6IHaJNUdFsy0RxgZoo7psf"  // Shelter
     ]
 
-export {bookId, imagePaths, author, cost, title, bookSummary, productLinks};
+export {bookId, imagePaths, author, cost, title, bookSummary, productLinks, keyLinks};

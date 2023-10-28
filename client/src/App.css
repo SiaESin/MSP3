@@ -108,6 +108,10 @@ head h1 a:hover {
 .books .grid-item {
     margin: 1em;
 }
+/* Book Details  */
+.flex-container {
+    margin: 20px;
+}
 /* Contact Page  */
 .contact {
     justify-content: center;
@@ -117,7 +121,6 @@ head h1 a:hover {
     padding: 10px;
     border: #19202c solid 2px;
 }
-
 /* User Authentication Forms  */
 .authentication {
     display: flex;
@@ -153,7 +156,12 @@ head h1 a:hover {
         margin-right: 2px;
         font-size: 16px;
     }
+    h1 a {
+        font-size: 2em;
+    }
     h2 {
+        color: var(--dark);
+        background-color: var(--light);
         margin: 0px;
         padding: 0px;
     }
@@ -183,12 +191,9 @@ head h1 a:hover {
         width: 90%;
     }
     /* About Page  */
-    .about {
+    .flex-container {
         text-align: center;
         margin: 10px;
-        display: flex;
-    }
-    .flex-container .about-section {
         flex-direction: column;
     }
     .books img {
@@ -218,7 +223,7 @@ head h1 a:hover {
         border: 2px solid var(--gold);
     }
     .contact-info {
-        margin: 2em;
+        margin: 10px;
         border-radius: 0 0 70px 70px;
     }
     .authentication {
