@@ -10,4 +10,7 @@ const bookSchema = new mongoose.Schema({
 })
 
 const BookModel = mongoose.model('Book', bookSchema)
+
+BookModel.createIndexes();
+
 module.exports = BookModel 

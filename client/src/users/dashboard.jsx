@@ -6,7 +6,7 @@ export default function Dashboard() {
     return (
         <div>   
             <h1>Dashboard</h1>
-            {!!user && <h2>Welcome, {user.name}</h2>}
+            {!!user && <h2>Thank you for logging in. {user.name} Let's buy some books!</h2> }
         </div>
     )
 }
