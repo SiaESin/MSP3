@@ -377,3 +377,11 @@ a3d4f7cd Merge pull request #27 from SiaESin/AG
 d87ce923 Merge pull request #26 from SiaESin/aly
 
 
+143dfae3 (HEAD -> siabhon, origin/main, origin/HEAD, main) working reg and login with dashboard
+88b2d979 Merge pull request #37 from SiaESin/aly
+9ffe5f8c Stripe button array connected
+c13eab57 Merge pull request #36 from SiaESin/Nalini
+65dbf43c working on stripe
+2e5cbd4c Still working on stripe
+
+
