@@ -6,7 +6,7 @@ export default function books() {
 
   return (
     <main className="books">
-      <h1>Books</h1>
+      <h2>Books</h2>
       <div className="grid-container">
         {title.map((book, index) => (
           <div className={`grid-item homebooks ${book}`} key={index}>
