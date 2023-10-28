@@ -86,7 +86,7 @@ const imagePaths = [
       "buy_btn_1O5e8iJNUdFsy0RxgeJcQcq1", // The Inheritance Games
       "buy_btn_1O5e7UJNUdFsy0RxdMTRQVu7", // The Hawthorne Legacy
       "buy_btn_1O5djjJNUdFsy0RxwIictUzY", // The Final Gambit
-      "buy_btn_1O5duPJNUdFsy0RxcId6BeLr", // The Brothers Hawthorne
+      "buy_btn_1O6ILMJNUdFsy0RxYUCELv3h", // The Brothers Hawthorne
       "buy_btn_1O6IExJNUdFsy0Rx2HRVWBDj", // Angels & Demons
       "buy_btn_1O5e4PJNUdFsy0RxZKL3gNgR", // Moon Called
       "buy_btn_1O5dk3JNUdFsy0RxrDoo9WIf", // The Perks of Being a Wallflower
