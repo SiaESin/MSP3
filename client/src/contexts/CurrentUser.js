@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createContext, useState, useEffect } from 'react';
+import React from 'react';
 
 export const CurrentUser = createContext({});
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CurrentUser } from "../contexts/CurrentUser";
-
+import React from 'react';
 export default function Dashboard() {
     const user = useContext(CurrentUser);
     return (

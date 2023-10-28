@@ -1,7 +1,7 @@
 // import { useState, useEffect, useContext } from 'react'
 // import { useHistory } from "react-router";
 // import { CurrentUser } from '.client/src/contexts/CurrentUser.js';
-
+import React from 'react';
 export default function Nav() {
     return (
         <head>
