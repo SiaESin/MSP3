@@ -1,35 +1,29 @@
-const dotenv = require('dotenv').config()
-const express = require('express')
-const cors = require('cors')
-const cookieParser = require('cookie-parser')
-const methodOverride = require('method-override')
-const mongoose = require('mongoose')
-const app = express()
+const dotenv = require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+const methodOverride = require('method-override');
+const sequelize = require('./sequelize');
+const User = require('./models/User'); // Import your Sequelize model
 
-//database connection
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true},
-    () => {
-        console.log('connected to MongoDB')
-    }   
-)
-app.use(express.json())
+const app = express();
 
-app.use(express.urlencoded({extended: true}))
-app.use(cookieParser())
-app.use('/', require('./routes/auth'))
-app.use(express.static('public'))
-app.use(methodOverride('_method'))
-app.use('/', require('./controllers/bookstore'))
-app.use(cors())
-
-
-
-const PORT = process.env.PORT || 3001
-
-app.listen(PORT, () => {
-    console.log('Server running on port ' + PORT);
+// Sync Sequelize models with the database
+sequelize.sync().then(() => {
+  console.log('Connected to SQL Database');
 });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(express.static('public'));
+app.use(methodOverride('_method'));
+app.use(cors());
 
+app.use('/users',re)
+
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log('Server running on port ' + PORT);
+});

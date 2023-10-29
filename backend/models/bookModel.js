@@ -1,16 +1,32 @@
-const mongoose = require('mongoose')  
+const { DataTypes } = require('sequelize');
+const sequelize = require('./path/to/sequelize');
 
-const bookSchema = new mongoose.Schema({
-    name: {type: String, required: true, unique: true},
-    author: {type: String, required: true},
-    date: {type: Date, default: Date.now},
-    description: {type: String, default: 'A great book!'},
-    price: {type: Number, required: true},
-    image: {type: String, default: 'https://via.placeholder.com' }
-})
+const Book = sequelize.define('Book', {
+  name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  author: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  date: {
+    type: DataTypes.DATE,
+    defaultValue: DataTypes.NOW,
+  },
+  description: {
+    type: DataTypes.STRING,
+    defaultValue: 'A great book!',
+  },
+  price: {
+    type: DataTypes.FLOAT,
+    allowNull: false,
+  },
+  image: {
+    type: DataTypes.STRING,
+    defaultValue: 'https://via.placeholder.com',
+  },
+});
 
-const BookModel = mongoose.model('Book', bookSchema)
-
-BookModel.createIndexes();
-
-module.exports = BookModel 
+module.exports = Book;
