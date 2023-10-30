@@ -32,6 +32,22 @@ Lastly, other main feature we could have added was a subscribe button to the boo
  Purchase books - Click on "buy button" and then this takes you to the purchase page. 
  Using stripe you can enter your credit card details and then checkout and once checked out, you will receive a confirmation saying thank you for shopping at Book Boulevard. 
 
+# References
+
+1."Perks of Being a Wallflower" by Stephen Chbosky
+2."Moon Called" by Patricia Briggs
+3."Angels and Demons" by Dan Brown
+4."Shelter" by Harlan Coben
+5."The Inheritance Games" by Jennifer Lynn Barnes
+6."The Hawthorne Legacy" by Jennifer Lynn Barnes
+7."The Final Gambit" by Jennifer Lynn Barnes
+8."The Hawthorne Brothers" by Jennifer Lynn Barnes
+9. A Beginner's Guide to Git: What is a Changelog and How to Generate It
+10. Coolors.com
+11. Build a Shopping Cart With React JS & Stripe YouTube Video
+12. W3Schools CSS Form Tutorial
+13. Stripe Payment Links Documentation
+
 # Other website functionalities
 
 
