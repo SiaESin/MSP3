@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 const { hashPassword, comparePassword } = require('../helper/hash');
 
@@ -55,6 +55,16 @@ const loginUser = async (req, res) => {
   }
 };
 
-//route handlers ...
+const getProfile = (req, res) => {
+  const {token} = req.cookies
+  if(token) {
+    jwt.verify(token, process.env.JWT_SECRET, {}, (error, user) => {
+      if(error) throw error;
+      res.json(user)
+    })
+  } else {
+    res.json(null)
+  } 
+  }
 
-module.exports = { bookBoulevard, registerUser, loginUser, getProfile };
+module.exports = { registerUser, loginUser, getProfile };  

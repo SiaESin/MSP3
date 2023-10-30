@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()  
-const Book = require('../models/bookModel.js')
+const Book = require('../models/books.js')
 
 //main
 router.get('/home', (req, res) => {

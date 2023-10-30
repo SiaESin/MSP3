@@ -1,26 +1,34 @@
-const dotenv = require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override');
-const sequelize = require('./sequelize');
-const User = require('./models/User'); // Import your Sequelize model
+const { Sequelize } = require('sequelize')
 
+// SEQUELIZE CONNECTION
+
+require('dotenv').config();
+const sequelize = new Sequelize(process.env.PG_URI)
 const app = express();
 
-// Sync Sequelize models with the database
-sequelize.sync().then(() => {
-  console.log('Connected to SQL Database');
-});
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
 app.use(cors());
 
-app.use('/users',re)
+// Sync Sequelize models with the database
+try {
+  sequelize.authenticate()
+  console.log(`Connected with Sequelize at ${process.env.PG_URI}`)  
+} catch (error) {
+  console.log(`Unable to connect to PG: ${error}`) 
+} 
+
+// app.use('/users', require('./controllers/users'));
+// app.use('/books', require('./controllers/bookstore'));
 
 const PORT = process.env.PORT || 3001;
 
