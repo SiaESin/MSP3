@@ -47,4 +47,7 @@ Outstanding bugs and/or unfinished functionality - None!
 
 Links to anything project related:
 
-https://book-boulevard.onrender.com/
+https://book-boulevard.onrender.com/    for frontend
+
+https://bookboulevard.onrender.com/    for backend
+
